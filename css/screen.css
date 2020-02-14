@@ -3,197 +3,200 @@
     ---
     Default markup for page level elements
 */
-
+/* Hiermee bepalen we de globale font-size, line-height, font-family en color van ons html document. Tenzij het ergens anders in de css overschreven wordt zijn dit de waarden die elk tekstelement krijgt. Probeer met de emmet shortcuts te werken: “fz16”, “lh1.5”, “ff” en “c” */
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: 'Helvetic Neue', Arial, Helvetica, sans-serif;
     color: #111;
     padding: 24px 24px 0;
+    background: white;
     scroll-behavior: smooth;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
+  }
+  
+  
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Customize the background color to match your design.
+   */
+  
+  ::-moz-selection {
     background: #44c8f5;
     color: white;
     text-shadow: none;
-}
-
-::selection {
+  }
+  
+  ::selection {
     background: #44c8f5;
     color: white;
     text-shadow: none;
-}
-
-/*
-    Elements: Images
-    ---
-    Default markup for images to make them responsive
-*/
-
-img {
-    min-width: 100%;
+  }
+  
+  /*
+      Elements: Images
+      ---
+      Default markup for images to make them responsive
+  */
+  img {
+    max-width: 100%;
     vertical-align: top;
-}
-
-/*
-    Elements: typography
-    ---
-    Default markup for typographic elements
-*/
-
-h1 {
-    font-family: "Times New Roman", serif;
-    font-size: 36px;
-    font-weight: normal;
-    line-height: 40px;
-    margin: 0 0 48px;
-}
-
-h2 {
-    font-size: 23px;
-    line-height: 32px;
-    margin: 0 0 24px;
-}
-
-h3 {
-    font-size: 18px;
-    line-height: 24px;
-    margin: 0 0 24px;
-}
-
-h4,
-h5,
-h6 {
-    font-size: 16px;
-    line-height: 24px;
-    margin: 0 0 24px;
-}
-
-p,
-ol,
-ul,
-dl,
-table,
-address,
-figure {
-    margin: 0 0 24px;
-}
-
-ul,
-ol,
-blockquote {
-    font-style: italic;
-    font-size: 23px;
-    line-height: 32px;
-    margin: 0 0 24px;
-    font-family: "Times New Roman", serif;
-}
-
-ul,
-ol{
-    padding-left: 24px;
-}
-
-li ul,
-li ol{
-    margin-bottom: 0;
-}
-
-blockquote {
-    font-style: inherit;
-    line-height: inherit;
-}
-
-figcaption {
-    font-size: 12px;
-    line-height: 16px;
-    margin: 0 0 24px;
-    font-family: "Times New Roman", serif;
-}
-
-hr {
-    border: 0;
-    height: 1px;
-    background: lightgray;
-    margin: 0 0 24px;
-}
-
-a {
-    color: royalblue;
-    transition: all .1s ease-in-out;
-}
-
-a:hover,
-a:focus {
-    color: crimson;
-}
-
-a:visited,
-a:active {
-    color: blueviolet;
-}
-
-table {
-    width: 100%;
-    border-spacing: 0;
-}
-
-th {
-    text-align: left;
-}
-
-th,
-td {
-    padding: 4px 8px;
-    border-bottom: 1px solid gainsboro;
-}
-
-.odd{
-    background-color: whitesmoke;
-}
-/*
-    Media Queries
-    ---
-    EXAMPLE Media Queries for Responsive Design.
-    These examples override the primary ('mobile first') styles.
-    Modify as content requires.
-*/
-
-
-/* Extra small devices (portrait phones, less than 576px)
-   No media query since this is the default in Bootstrap
-*/
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    h1{
-        font-size: 58px;
-        line-height: 64px;
-    }
-    html{
-        padding: 48px 48px 24px;
-    }
-}
-
-/* Large devices (landscape tablets, desktops, 992px and up) */
-@media (min-width: 992px) {
-
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-}
+  }
+  
+  /*
+          Elements: typography
+          ---
+          Default markup for typographic elements
+      */
+  
+  h1 {
+      font-family: "Times New Roman", serif;
+      font-size: 38px;
+      font-weight: normal;
+      line-height: 40px;
+      margin: 0 0 48px;
+  
+  }
+  
+  h2 {
+      font-size: 23px;
+      line-height: 32px;
+      margin: 0 0 24px;
+  }
+  
+  h3 {
+      font-size: 18px;
+      line-height: 24px;
+      margin: 0 0 24px;
+  }
+  
+  h4,
+  h5,
+  h6 {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 0 24px;
+  }
+  
+  p,
+  ol,
+  ul,
+  dl,
+  table,
+  address,
+  figure {
+      margin: 0 0 24px;
+  }
+  
+  ul,
+  ol{
+      padding-left: 24px;
+  }
+  blockquote {
+      font-style: italic;
+      font-size: 23px;
+      line-height: 32px;
+      margin: 0 0 24px;
+      font-family: "Times New Roman", serif;
+  
+  }
+  
+  li ul,
+  li ol {
+      margin-bottom: 0;
+  }
+  
+  blockquote * {
+      font-size: inherit;
+      line-height: inherit;
+  }
+  
+  figcaption {
+  }
+  
+  hr {
+      border: 0;
+      height: 1px;
+      background: lightgray;
+      margin: 0 0 24px;
+  
+  }
+  
+  a {
+      color: royalblue;
+      transition: all .1s ease-in-out;
+  }
+  
+  a:hover,
+  a:focus {
+      color: blueviolet;
+  }
+  
+  a:visited,
+  a:active {
+      color: crimson;
+  }
+  
+  /*
+      Media Queries
+      ---
+      EXAMPLE Media Queries for Responsive Design.
+      These examples override the primary ('mobile first') styles.
+      Modify as content requires.
+  */
+  
+  
+  /* Extra small devices (portrait phones, less than 576px)
+     No media query since this is the default in Bootstrap
+  */
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+  
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+      html{
+  
+          padding: 48px 48px 24px;
+      }
+      
+      hi{
+          font-size: 58px;
+          line-height: 64px;
+      }
+  
+  
+  }
+  
+  /* Large devices (landscape tablets, desktops, 992px and up) */
+  @media (min-width: 992px) {
+  
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+  
+  }
+  
+  /* Om de table over de volledige breedte te laten lopen kunnen we de width op 100% zetten.
+  Tables hebben standaard tussen de cellen witruimte. We gaan die afzetten door border-spacing op 0 te zetten. */
+  table {
+      width: 100%;
+      border-spacing: 0;
+  }
+  /* De tekst in th's staat standaard gecentreerd. We gaan die links uitlijnen door text-align op left te zetten. */
+  th {
+      text-align: left;
+  }
+  /* th's en td's gaan we 4px padding boven en onderaan geven en 8px padding links en rechts. En een border-bottom van 1px. */
+  td {
+      padding: 4px 8px;
+      border-bottom: 1px solid gainsboro;
+  }
+  
+  .odd {
+      background-color: whitesmoke;
+  }
